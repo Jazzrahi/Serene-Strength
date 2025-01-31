@@ -1,0 +1,154 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden; /* Prevent scrollbars during video playback */
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place video behind other content */
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure video covers the entire container */
+}
+
+.overlay { /* Add a semi-transparent overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity for desired darkness */
+}
+
+/* Login Container */
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px; /* Slightly wider for better spacing */
+    padding: 30px; /* Increased padding */
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque background */
+    backdrop-filter: blur(15px); /* Increased blur */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+    text-align: center;
+    color: #fff; /* White text for better contrast */
+}
+
+.login-container h2 {
+    margin-bottom: 25px;
+    font-weight: 600; /* Slightly bolder heading */
+    font-size: 1.8rem;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    outline: none;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque background */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.3); /* Highlight background on focus */
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #eee; /* Slightly lighter label color */
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: 8px;
+    left: 12px;
+    font-size: 12px;
+    color: #ffd700; /* Gold color on focus/valid */
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background: #ffd700; /* Gold button */
+    font-size: 18px;
+    font-weight: 500; /* Slightly less bold */
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white on hover */
+    color: #000;
+}
+
+/* Register Link */
+.register-link {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #eee;
+}
+
+.register-link a {
+    color: #ffd700; /* Gold link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: #fff; /* White on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-container {
+        width: 90%; /* Take up more width on smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .input-group input {
+        padding: 12px; /* Reduce padding */
+    }
+
+    button {
+        padding: 12px; /* Reduce padding */
+        font-size: 16px; /* Slightly smaller font */
+    }
+}

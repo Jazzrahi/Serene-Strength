@@ -32,21 +32,6 @@ body {
     font-family: 'Poppins', sans-serif;
     
 }
-
-li a {
-    font-size: 20px;  /* Adjust icon size */
-    color: white; /* Change icon color */
-    text-decoration: none; /* Remove underline */
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-li a:hover {
-    color: gold; /* Change color on hover */
-}
-
 header {
     background: url('collage.jpg') no-repeat center center/cover;
     color: rgba(63, 144, 46, 0.493);
@@ -104,7 +89,6 @@ nav {
 .home_welcome {
     font-weight: 500;
     font-size: 2rem;
-    text-decoration: underline;
     color: #586673;
     animation: slideDown 1.2s ease-in-out;
     letter-spacing: normal;

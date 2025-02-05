@@ -1,40 +1,6 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    padding-top: 60px;
-}
 
-header::before {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 1); /* Dark overlay */
-    z-index: 1000;
-    display: flex;
-}
-header h1 {
-    position: relative;
-    z-index: 1000;
-}
-
-body, h1, h2, h3, p, ul, li, form, input, textarea, button {
-    margin: 0;
-    padding: 0;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    font-family: 'Poppins', sans-serif;
-    
-}
 header {
     background: url('collage.jpg') no-repeat center center/cover;
-    color: rgba(63, 144, 46, 0.493);
     text-align: center;
     padding: 100px 20px;
     position: relative;
@@ -42,7 +8,7 @@ header {
 }
 
  .heading {
-    
+
         font-family: 'Arial', sans-serif; /* Or any preferred font */
         display: flex;
         align-items: center;
@@ -52,7 +18,6 @@ header {
       
       .cult {
             font-weight: bold;
-            color: white; /* Text color */
             text-shadow: -2px -2px 0 rgb(208, 200, 200),  
                          2px -2px 0 black,  
                          -2px 2px 0 black,  
@@ -61,21 +26,6 @@ header {
         font-size: 100px;
         }
       
-      
-      .heading span {
-        display: inline-block;
-        position: relative;
-        padding: 0%
-      }
-
-nav {
-    position: relative;
-    top: 0;
-    width: 100%;
-    background: #191818;
-    z-index: 1000;
-}
-
 /* General Section Styling */
 #home {
     padding: 10px 0;
@@ -108,7 +58,6 @@ nav {
     padding: 20px;
     background: #fff6e4be;
     border-radius: 0px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -127,7 +76,6 @@ nav {
     color: #fff6f1;
     border-radius: 7px;
     transition: 0.3s;
-    text-transform: uppercase;
     font-weight: bold;
 }
 
@@ -135,48 +83,6 @@ nav {
     background: #ff5500;
     color: white;
     transform: scale(1.1);
-}
-
-/* Section Title Box */
-.section-title-box {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background: linear-gradient(to right, #4F5B66, #687582);
-    border-radius: 0px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-
-.section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 
@@ -208,10 +114,9 @@ nav {
     font-weight: bold;
     text-align: center;
     color: white;
-    text-transform: uppercase;
 }
 .service-container {
-   
+
     display: flex; /* Align boxes side-by-side */
     justify-content: space-around; /* Space them evenly */
     flex-wrap: wrap; /* Wrap to the next row on smaller screens */
@@ -219,11 +124,10 @@ nav {
 }
 
 .service-box {
-    width: 25%; /* Each box takes 30% width */
+    width: 25%; /* Each box takes 25% width */
     margin: 10px;
     background: #fff; /* White background */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -270,8 +174,7 @@ body {
     padding: 80px 0; /* Adjust padding as needed */
     background: linear-gradient(135deg, #f8f8f8, #e6e6e6);
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    animation: fadeIn 1.2s ease-in-out;
+    font-family: 'Poppins', sans-serif; 
 }
 
 #train-at-home .container {
@@ -291,7 +194,6 @@ body {
     font-size: 1.2em;
     margin-bottom: 40px;
     color: #555;
-    line-height: 1.6;
 }
 
 .expert-categories {
@@ -351,27 +253,6 @@ body {
     color: #333;
 }
 
-.expert .location,
-.expert .rating {
-    font-size: 0.9em;
-    color: #777;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .category {
-        flex: 1 1 45%;
-    }
-}
-
-@media (max-width: 500px) {
-    .category {
-        flex: 1 1 100%;
-    }
-}
-
-
-
 .trusted-by {
     text-align: center;
     padding: 40px 20px;
@@ -398,9 +279,6 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 
-.logos img:hover {
-    opacity: 1;
-}
 
 .pricing-container {
     display: flex;
@@ -485,37 +363,16 @@ body {
 
 .pricing-button {
     background-color: #4285f4; /* Blue button */
-    color: white;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
     font-size: 1em;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .pricing-button:hover {
     background-color: #357ae8; /* Darker blue on hover */
 }
-
-
-/* Responsive adjustments - make card smaller on smaller screens */
-@media (max-width: 400px) {
-    .pricing-card {
-        width: 90%; /* Take up most of the screen width */
-    }
-
-    .pricing-header h2 {
-        font-size: 1.5em;
-    }
-
-    .pricing-cost {
-        font-size: 1.3em;
-    }
-}
-
-
-
 
 .faq-container {
     max-width: 900px; /* Slightly wider container */
@@ -536,12 +393,6 @@ body {
     font-size: 2.5em; /* Larger title size */
     text-decoration: underline;
    
-}
-
-.faq-group {
-    margin-bottom: 25px;
-    border-bottom: none; /* Removed the separator line */
-    padding-bottom: 0;
 }
 
 .faq-group h2 {
